@@ -17,3 +17,5 @@ def add_task(request):
 def list(request):
     tasks = Task.objects.all()
     return render(request, 'list.html', {'tasks': tasks})
+
+
