@@ -10,7 +10,7 @@ def add_task(request):
         title = request.POST.get('title')
         if title:
             Task.objects.create(title=title)
-        return redirect('index')
+        return redirect('list')
     return render(request, 'add_task.html')
 
 
